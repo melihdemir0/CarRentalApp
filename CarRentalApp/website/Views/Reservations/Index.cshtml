@@ -1,0 +1,56 @@
+﻿@model IEnumerable<website.Models.ReservationViewModel>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Reservations</title>
+    <link rel="stylesheet" type="text/css" href="~/Content/Site.css" />
+</head>
+<body>
+    <div>
+        <h2>Reservations</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Reservations ID</th>
+                    <th>Cars ID</th>
+                    <th>Cars Model</th>
+                    <th>Cars Year</th>
+                    <th>Cars Is Available</th>
+                    <th>Cars Brand ID</th>
+                    <th>Cars Brand Name</th>
+                    <th>Customers ID</th>
+                    <th>Customers First Name</th>
+                    <th>Customers Last Name</th>
+                    <th>Customers Email</th>
+                    <th>Customers Phone Number</th>
+                    <th>Reservations Start Date</th>
+                    <th>Reservations End Date</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>@item.ReservationId</td>
+                        <td>@item.CarId</td>
+                        <td>@item.CarModel</td>
+                        <td>@item.CarYear</td>
+                        <td>@item.CarIsAvailable</td>
+                        <td>@item.CarBrandId</td>
+                        <td>@item.CarBrandName</td>
+                        <td>@item.CustomerId</td>
+                        <td>@item.CustomerFirstName</td>
+                        <td>@item.CustomerLastName</td>
+                        <td>@item.CustomerEmail</td>
+                        <td>@item.CustomerPhoneNumber</td>
+                        <td>@item.ReservationStartDate.ToString("yyyy-MM-dd")</td>
+                        <td>@item.ReservationEndDate.ToString("yyyy-MM-dd")</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

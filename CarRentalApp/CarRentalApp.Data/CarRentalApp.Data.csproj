@@ -57,7 +57,6 @@
     <Compile Include="CarRentalContext.cs" />
     <Compile Include="CarRepository.cs" />
     <Compile Include="CustomerRepository.cs" />
-    <Compile Include="IRepository.cs" />
     <Compile Include="Migrations\202408081057347_migration_one.cs" />
     <Compile Include="Migrations\202408081057347_migration_one.designer.cs">
       <DependentUpon>202408081057347_migration_one.cs</DependentUpon>

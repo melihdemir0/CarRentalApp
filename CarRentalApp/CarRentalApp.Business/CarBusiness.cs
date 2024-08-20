@@ -1,4 +1,4 @@
-﻿using CarRentalApp.Data.Repositories;
+﻿using CarRentalApp.Data;
 using CarRentalApp.Entity;
 using System;
 using System.Collections.Generic;
@@ -11,10 +11,8 @@ namespace CarRentalApp.Business
 {
     public class CarBusiness : BaseBusiness<Car>
     {
-        public CarBusiness(IRepository<Car> repository) : base(repository)
-        {
-        }
+      
 
-        // Car'a özel iş mantığı metotları burada tanımlanabilir
+
     }
 }

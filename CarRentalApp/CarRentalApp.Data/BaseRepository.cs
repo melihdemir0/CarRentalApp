@@ -1,60 +1,53 @@
-﻿using System;
+﻿using CarRentalApp.Entity;
+using System;
 using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
-using System.Linq.Expressions;
 
-namespace CarRentalApp.Data.Repositories
+namespace CarRentalApp.Data
 {
-    public class BaseRepository<T> where T : class
+    public class BaseRepository<TEntity> where TEntity : class
     {
-        protected readonly CarRentalContext _context;
-        private readonly DbSet<T> _dbSet;
+        public CarRentalContext _context;
 
-        public BaseRepository(CarRentalContext context)
+        public void Add(TEntity entity)
         {
-            _context = context ?? throw new ArgumentNullException(nameof(context));
-            _dbSet = _context.Set<T>();
+            _context = new CarRentalContext();
+            _context.Set<TEntity>().Add(entity);
+            _context.SaveChanges();
+            _context.Dispose();
         }
 
-        public virtual IEnumerable<T> GetAll()
+        public void Update(TEntity entity)
         {
-            return _dbSet.ToList();
+            _context = new CarRentalContext();
+            _context.Entry(entity).State = EntityState.Modified;
+            _context.SaveChanges();
+            _context.Dispose();
         }
 
-        public virtual T GetById(int id)
+        public void Delete(TEntity entity)
         {
-            return _dbSet.Find(id);
+            _context = new CarRentalContext();
+            _context.Set<TEntity>().Remove(entity);
+            _context.SaveChanges();
+            _context.Dispose();
         }
 
-        public virtual IEnumerable<T> Find(Expression<Func<T, bool>> predicate)
+        public TEntity GetById(int id)
         {
-            return _dbSet.Where(predicate);
+            _context = new CarRentalContext();
+            TEntity entity = _context.Set<TEntity>().Find(id);
+            _context.Dispose();
+            return entity;
         }
 
-        public virtual void Add(T entity)
+        public List<TEntity> GetAll()
         {
-            _dbSet.Add(entity);
-        }
-
-        public void Update<T>(T entity) where T : class
-        {
-            throw new NotImplementedException();
-        }
-
-        public virtual void AddRange(IEnumerable<T> entities)
-        {
-            _dbSet.AddRange(entities);
-        }
-
-        public virtual void Remove(T entity)
-        {
-            _dbSet.Remove(entity);
-        }
-
-        public virtual void RemoveRange(IEnumerable<T> entities)
-        {
-            _dbSet.RemoveRange(entities);
+            _context = new CarRentalContext();
+            List<TEntity> entities = _context.Set<TEntity>().ToList();
+            _context.Dispose();
+            return entities;
         }
     }
 }

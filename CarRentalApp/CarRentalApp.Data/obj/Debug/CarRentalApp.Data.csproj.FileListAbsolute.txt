@@ -1,0 +1,16 @@
+C:\Users\OMEN\Desktop\CarRentalRepos\CarRentalApp\CarRentalApp.Data\bin\Debug\CarRentalApp.Data.dll.config
+C:\Users\OMEN\Desktop\CarRentalRepos\CarRentalApp\CarRentalApp.Data\bin\Debug\CarRentalApp.Data.dll
+C:\Users\OMEN\Desktop\CarRentalRepos\CarRentalApp\CarRentalApp.Data\bin\Debug\CarRentalApp.Data.pdb
+C:\Users\OMEN\Desktop\CarRentalRepos\CarRentalApp\CarRentalApp.Data\bin\Debug\CarRentalApp.Entity.dll
+C:\Users\OMEN\Desktop\CarRentalRepos\CarRentalApp\CarRentalApp.Data\bin\Debug\EntityFramework.dll
+C:\Users\OMEN\Desktop\CarRentalRepos\CarRentalApp\CarRentalApp.Data\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\OMEN\Desktop\CarRentalRepos\CarRentalApp\CarRentalApp.Data\bin\Debug\CarRentalApp.Entity.pdb
+C:\Users\OMEN\Desktop\CarRentalRepos\CarRentalApp\CarRentalApp.Data\bin\Debug\EntityFramework.xml
+C:\Users\OMEN\Desktop\CarRentalRepos\CarRentalApp\CarRentalApp.Data\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\OMEN\Desktop\CarRentalRepos\CarRentalApp\CarRentalApp.Data\obj\Debug\CarRentalApp.Data.csproj.AssemblyReference.cache
+C:\Users\OMEN\Desktop\CarRentalRepos\CarRentalApp\CarRentalApp.Data\obj\Debug\CarRentalApp.Data.csproj.CoreCompileInputs.cache
+C:\Users\OMEN\Desktop\CarRentalRepos\CarRentalApp\CarRentalApp.Data\obj\Debug\CarRentalApp.Data.csproj.CopyComplete
+C:\Users\OMEN\Desktop\CarRentalRepos\CarRentalApp\CarRentalApp.Data\obj\Debug\CarRentalApp.Data.dll
+C:\Users\OMEN\Desktop\CarRentalRepos\CarRentalApp\CarRentalApp.Data\obj\Debug\CarRentalApp.Data.pdb
+C:\Users\OMEN\Desktop\CarRentalRepos\CarRentalApp\CarRentalApp.Data\obj\Debug\CarRentalApp.Data.Migrations.migration_one.resources
+C:\Users\OMEN\Desktop\CarRentalRepos\CarRentalApp\CarRentalApp.Data\obj\Debug\CarRentalApp.Data.csproj.GenerateResource.cache

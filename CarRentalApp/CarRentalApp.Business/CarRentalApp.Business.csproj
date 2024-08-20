@@ -46,7 +46,6 @@
     <Compile Include="CarBusiness.cs" />
     <Compile Include="CarImageBusiness.cs" />
     <Compile Include="CustomerBusiness.cs" />
-    <Compile Include="IBaseBusiness.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ReservationBusiness.cs" />
   </ItemGroup>

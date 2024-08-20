@@ -1,0 +1,6 @@
+C:\Users\OMEN\Desktop\CarRentalRepos\CarRentalApp\CarRentalApp.Entity\bin\Debug\CarRentalApp.Entity.dll
+C:\Users\OMEN\Desktop\CarRentalRepos\CarRentalApp\CarRentalApp.Entity\bin\Debug\CarRentalApp.Entity.pdb
+C:\Users\OMEN\Desktop\CarRentalRepos\CarRentalApp\CarRentalApp.Entity\obj\Debug\CarRentalApp.Entity.csproj.AssemblyReference.cache
+C:\Users\OMEN\Desktop\CarRentalRepos\CarRentalApp\CarRentalApp.Entity\obj\Debug\CarRentalApp.Entity.csproj.CoreCompileInputs.cache
+C:\Users\OMEN\Desktop\CarRentalRepos\CarRentalApp\CarRentalApp.Entity\obj\Debug\CarRentalApp.Entity.dll
+C:\Users\OMEN\Desktop\CarRentalRepos\CarRentalApp\CarRentalApp.Entity\obj\Debug\CarRentalApp.Entity.pdb

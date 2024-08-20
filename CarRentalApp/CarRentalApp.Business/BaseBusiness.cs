@@ -1,50 +1,76 @@
-﻿using CarRentalApp.Data.Repositories;
-using System;
+﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
+using CarRentalApp.Data;
 
 namespace CarRentalApp.Business
 {
-    public abstract class BaseBusiness<T> : IBaseBusiness<T> where T : class
+    public class BaseBusiness<TEntity> where TEntity : class
     {
-        protected readonly IRepository<T> _repository;
+        private BaseRepository<TEntity> _repository;
 
-        protected BaseBusiness(IRepository<T> repository)
+        public BaseBusiness()
         {
-            _repository = repository;
+            _repository = new BaseRepository<TEntity>();
         }
 
-        public virtual IEnumerable<T> GetAll()
+        public void Add(TEntity entity)
         {
-            return _repository.GetAll();
-        }
-
-        public virtual T GetById(int id)
-        {
-            return _repository.GetById(id);
-        }
-
-        public virtual void Add(T entity)
-        {
-            _repository.Add(entity);
-        }
-
-        public virtual void Update(T entity)
-        {
-            _repository.Update(entity);
-        }
-
-        public virtual void Delete(int id)
-        {
-            var entity = _repository.GetById(id);
-            if (entity != null)
+            try
             {
-                _repository.Remove(entity);
+                _repository.Add(entity);
+            }
+            catch (Exception e)
+            {
+                throw new Exception("An error occurred while adding the entity.", e);
+            }
+        }
+
+        public void Update(TEntity entity)
+        {
+            try
+            {
+                _repository.Update(entity);
+            }
+            catch (Exception e)
+            {
+                throw new Exception("An error occurred while updating the entity.", e);
+            }
+        }
+
+        public void Delete(TEntity entity)
+        {
+            try
+            {
+                _repository.Delete(entity);
+            }
+            catch (Exception e)
+            {
+                throw new Exception("An error occurred while deleting the entity.", e);
+            }
+        }
+
+        public TEntity GetById(int id)
+        {
+            try
+            {
+                return _repository.GetById(id);
+            }
+            catch (Exception e)
+            {
+                throw new Exception("An error occurred while retrieving the entity by ID.", e);
+            }
+        }
+
+        public List<TEntity> GetAll()
+        {
+            try
+            {
+                return _repository.GetAll();
+            }
+            catch (Exception e)
+            {
+                throw new Exception("An error occurred while retrieving all entities.", e);
             }
         }
     }
 }
-

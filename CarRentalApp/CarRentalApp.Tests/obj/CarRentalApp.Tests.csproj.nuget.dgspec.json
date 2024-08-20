@@ -1,0 +1,157 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\OMEN\\Desktop\\CarRentalRepos\\CarRentalApp\\CarRentalApp.Tests\\CarRentalApp.Tests.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\OMEN\\Desktop\\CarRentalRepos\\CarRentalApp\\CarRentalApp.Business\\CarRentalApp.Business.csproj": {
+      "restore": {
+        "projectUniqueName": "C:\\Users\\OMEN\\Desktop\\CarRentalRepos\\CarRentalApp\\CarRentalApp.Business\\CarRentalApp.Business.csproj",
+        "projectName": "CarRentalApp.Business",
+        "projectPath": "C:\\Users\\OMEN\\Desktop\\CarRentalRepos\\CarRentalApp\\CarRentalApp.Business\\CarRentalApp.Business.csproj",
+        "frameworks": {
+          "net472": {
+            "projectReferences": {
+              "C:\\Users\\OMEN\\Desktop\\CarRentalRepos\\CarRentalApp\\CarRentalApp.Data\\CarRentalApp.Data.csproj": {
+                "projectPath": "C:\\Users\\OMEN\\Desktop\\CarRentalRepos\\CarRentalApp\\CarRentalApp.Data\\CarRentalApp.Data.csproj"
+              },
+              "C:\\Users\\OMEN\\Desktop\\CarRentalRepos\\CarRentalApp\\CarRentalApp.Entity\\CarRentalApp.Entity.csproj": {
+                "projectPath": "C:\\Users\\OMEN\\Desktop\\CarRentalRepos\\CarRentalApp\\CarRentalApp.Entity\\CarRentalApp.Entity.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "net472": {}
+      }
+    },
+    "C:\\Users\\OMEN\\Desktop\\CarRentalRepos\\CarRentalApp\\CarRentalApp.Data\\CarRentalApp.Data.csproj": {
+      "restore": {
+        "projectUniqueName": "C:\\Users\\OMEN\\Desktop\\CarRentalRepos\\CarRentalApp\\CarRentalApp.Data\\CarRentalApp.Data.csproj",
+        "projectName": "CarRentalApp.Data",
+        "projectPath": "C:\\Users\\OMEN\\Desktop\\CarRentalRepos\\CarRentalApp\\CarRentalApp.Data\\CarRentalApp.Data.csproj",
+        "frameworks": {
+          "net472": {
+            "projectReferences": {
+              "C:\\Users\\OMEN\\Desktop\\CarRentalRepos\\CarRentalApp\\CarRentalApp.Entity\\CarRentalApp.Entity.csproj": {
+                "projectPath": "C:\\Users\\OMEN\\Desktop\\CarRentalRepos\\CarRentalApp\\CarRentalApp.Entity\\CarRentalApp.Entity.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "net472": {}
+      }
+    },
+    "C:\\Users\\OMEN\\Desktop\\CarRentalRepos\\CarRentalApp\\CarRentalApp.Entity\\CarRentalApp.Entity.csproj": {
+      "restore": {
+        "projectUniqueName": "C:\\Users\\OMEN\\Desktop\\CarRentalRepos\\CarRentalApp\\CarRentalApp.Entity\\CarRentalApp.Entity.csproj",
+        "projectName": "CarRentalApp.Entity",
+        "projectPath": "C:\\Users\\OMEN\\Desktop\\CarRentalRepos\\CarRentalApp\\CarRentalApp.Entity\\CarRentalApp.Entity.csproj",
+        "frameworks": {
+          "net472": {
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "net472": {}
+      }
+    },
+    "C:\\Users\\OMEN\\Desktop\\CarRentalRepos\\CarRentalApp\\CarRentalApp.Tests\\CarRentalApp.Tests.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\OMEN\\Desktop\\CarRentalRepos\\CarRentalApp\\CarRentalApp.Tests\\CarRentalApp.Tests.csproj",
+        "projectName": "CarRentalApp.Tests",
+        "projectPath": "C:\\Users\\OMEN\\Desktop\\CarRentalRepos\\CarRentalApp\\CarRentalApp.Tests\\CarRentalApp.Tests.csproj",
+        "packagesPath": "C:\\Users\\OMEN\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\OMEN\\Desktop\\CarRentalRepos\\CarRentalApp\\CarRentalApp.Tests\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\OMEN\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "C:\\Users\\OMEN\\Desktop\\CarRentalRepos\\CarRentalApp\\CarRentalApp.Business\\CarRentalApp.Business.csproj": {
+                "projectPath": "C:\\Users\\OMEN\\Desktop\\CarRentalRepos\\CarRentalApp\\CarRentalApp.Business\\CarRentalApp.Business.csproj"
+              },
+              "C:\\Users\\OMEN\\Desktop\\CarRentalRepos\\CarRentalApp\\CarRentalApp.Data\\CarRentalApp.Data.csproj": {
+                "projectPath": "C:\\Users\\OMEN\\Desktop\\CarRentalRepos\\CarRentalApp\\CarRentalApp.Data\\CarRentalApp.Data.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[16.9.4, )"
+            },
+            "Moq": {
+              "target": "Package",
+              "version": "[4.20.70, )"
+            },
+            "coverlet.collector": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.0.2, )"
+            },
+            "xunit": {
+              "target": "Package",
+              "version": "[2.4.1, )"
+            },
+            "xunit.runner.visualstudio": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.4.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.416\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

@@ -5,13 +5,11 @@ using System.Text;
 using System.Threading.Tasks;
 using CarRentalApp.Entity;
 
-namespace CarRentalApp.Data.Repositories
+namespace CarRentalApp.Data
 {
     public class CustomerRepository : BaseRepository<Customer>
     {
-        public CustomerRepository(CarRentalContext context) : base(context)
-        {
-        }
+       
 
         // Customer'a özel metotlar burada tanımlanabilir
     }
